@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb11f320-3937-4c72-9e73-23f80ea0da28" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51376/VirtualTour.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VirtualTour.xsd" MetadataType="Schema" ID="51989a41-d9c4-4994-88f2-6807713cc9a5" SourceId="1" SourceUrl="http://localhost:51376/VirtualTour.svc?xsd=xsd2" />
+    <MetadataFile FileName="VirtualTour1.xsd" MetadataType="Schema" ID="6c2a180b-e3ac-4b58-9b4e-5fbe29149a84" SourceId="1" SourceUrl="http://localhost:51376/VirtualTour.svc?xsd=xsd1" />
+    <MetadataFile FileName="VirtualTour.disco" MetadataType="Disco" ID="33d4c717-4b5d-4e6c-8f68-b5991596b448" SourceId="1" SourceUrl="http://localhost:51376/VirtualTour.svc?disco" />
+    <MetadataFile FileName="VirtualTour2.xsd" MetadataType="Schema" ID="e635f02a-61d8-4b19-9d4b-c0f5835c7e24" SourceId="1" SourceUrl="http://localhost:51376/VirtualTour.svc?xsd=xsd0" />
+    <MetadataFile FileName="VirtualTour.wsdl" MetadataType="Wsdl" ID="87771dc3-4603-4573-97cd-8e541d492aea" SourceId="1" SourceUrl="http://localhost:51376/VirtualTour.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

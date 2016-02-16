@@ -1,0 +1,281 @@
+﻿@{
+    ViewBag.Title = "Create";
+} 
+@*<div id="uploadimage">
+    <div id="uploadimg1">
+    <img class="upload" src="http://www.clker.com/cliparts/4/1/1/8/13501544242063799778upload.svg.med.png" />
+    <label>Add Stop</label>
+    </div>
+</div>*@
+<script type="text/javascript">
+    var imageP;
+    function showDiv() {
+        var bldgId = $('#buildingName').val();
+        var bldgDesc = $('#buildingDesc').val();
+        $.ajax({
+            data: {
+                buildingIDVal: bldgId,
+                buildingDescVal: bldgDesc
+            }, // data being sent to the controller
+            type: 'POST', // we are sending data so this is POST
+            traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+            url: '/Home/SaveBuildingDetails', // controller/action name
+            success: function (data) {
+                div = document.getElementById('addpic');
+                div.style.display = "block";
+                $('#leftImageLabel').hide();
+                $('#checkboxLeft').hide();
+                $('#uploadLeftImg').hide();
+                div2 = document.getElementById('addpic1');
+                div2.style.display = "none";
+                div3 = document.getElementById('addpic2');
+                div3.style.display = "none";
+                $('#rightImageLabel').hide();
+                $('#checkboxRight').hide();
+                $('#forwardImageLabel').hide();
+                $('#checkboxForward').hide();
+                $('#backwardImageLabel').hide();
+                $('#checkboxBackward').hide();
+                $('#uploadRightImg').hide();
+                $('#uploadForwardImg').hide();
+                $('#uploadBackwardImg').hide();
+                $('#addPicRightBtn').hide();
+                $('#addPicForwardBtn').hide();
+                $('#addPicBackwardBtn').hide();
+                $('#addPicLeftBtn').hide();
+                $('#finishTourBtn').hide();
+            }
+        });       
+    }
+
+    function SaveMainImage(dirVal) {
+        var imagPath = $('#imagePath').val();
+        $.ajax({
+            data: {
+                imagPathVal: imagPath,
+                direction: dirVal
+            }, // data being sent to the controller
+            type: 'POST', // we are sending data so this is POST
+            traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+            url: '/Home/SaveImageDetails', // controller/action name
+            success: function (data) {  
+                if (data["directValue"] == "main") {
+                    $('#uploadImg').hide();
+                    $('#uploadLeftImg').hide();
+                    $('#addPicLeftBtn').show();
+                }
+                else if (data["directValue"] == "left") {
+                    $('#uploadImg').hide();
+                    $('#uploadLeftImg').hide();
+                    $('#addPicRightBtn').show();
+                    $('#finishTourBtn').show();
+                }
+                else if (data["directValue"] == "right") {
+                    $('#uploadRightImg').hide();
+                    $('#addPicForwardBtn').show();
+                    $('#finishTourBtn').show();
+                }
+                else if (data["directValue"] == "forward") {
+                    $('#uploadForwardImg').hide();
+                    //$('#addPicBackwardBtn').show();
+                    $('#finishTourBtn').show();
+                }
+                else if (data["directValue"] == "backward") {
+                    $('#uploadBackwardImg').hide();
+                    $('#finishTourBtn').show();
+                }
+            }
+        });
+    }
+
+    function SaveLeftImage() {
+        var imagPath = $('#imagePath').val();
+        $.ajax({
+            data: {
+                imagPathVal: imagPath
+            }, // data being sent to the controller
+            type: 'POST', // we are sending data so this is POST
+            traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+            url: '/Home/SaveImageDetails', // controller/action name
+            success: function (data) {
+
+            }
+        });
+    }
+
+    function showDiv1() {
+        div = document.getElementById('addpic2');
+        div.style.display = "block";
+        div1 = document.getElementById('addpic');
+        div1.style.display = "none";
+        div2 = document.getElementById('addpic1');
+        div2.style.display = "none";
+    }
+
+    function ShowLeftImgDialogBTN() {
+        $('#leftImageLabel').show();
+        $('#checkboxLeft').show();
+        $('#addPicRightBtn').show();
+        $('#imagePath').hide();
+        $('#uploadImg').hide();
+        $('#addPicLeftBtn').hide();
+        $('#output').hide();
+    }
+
+    function ShowRightImgDialogBTN() {
+        $('#leftImageLabel').hide();
+        $('#checkboxLeft').hide();
+        $('#rightImageLabel').show();
+        $('#checkboxRight').show();
+        $('#addPicForwardBtn').show();
+        $('#imagePath').hide();
+        $('#uploadImg').hide();
+        $('#addPicLeftBtn').hide();
+        $('#addPicRightBtn').hide();
+        $('#output').hide();
+    }
+
+    function ShowForwardImgDialogBTN() {
+        $('#rightImageLabel').hide();
+        $('#checkboxRight').hide();
+        $('#forwardImageLabel').show();
+        $('#checkboxForward').show();
+        $('#addPicBackwardBtn').show();
+        $('#imagePath').hide();
+        $('#uploadImg').hide();
+        $('#addPicRightBtn').hide();
+        $('#addPicForwardBtn').hide();
+        $('#output').hide();
+    }
+
+    function ShowBackwardImgDialogBTN() {
+        $('#forwardImageLabel').hide();
+        $('#checkboxForward').hide();
+        $('#backwardImageLabel').show();
+        $('#checkboxBackward').show();
+        $('#imagePath').hide();
+        $('#uploadImg').hide();
+        $('#addPicForwardBtn').hide();
+        $('#addPicBackwardBtn').hide();
+        $('#output').hide();
+    }
+
+    function uploadLeftImage() {
+        $('#leftImageLabel').hide();
+        $('#checkboxLeft').hide();
+        $('#imagePath').show();
+        //$('#imagePath').val('');
+        $('#uploadImg').hide();
+        $('#output').hide();
+        $('#uploadLeftImg').show();
+        $('#addPicLeftBtn').hide();
+        $('#addPicRightBtn').hide();
+    }
+
+    function uploadRightImage(){
+        $('#rightImageLabel').hide();
+        $('#checkboxRight').hide();
+        $('#imagePath').show();
+        //$('#imagePath').val('');
+        $('#uploadImg').hide();
+        $('#output').hide();
+        $('#uploadRightImg').show();
+        $('#addPicRightBtn').hide();
+        $('#addPicForwardBtn').hide();
+    }
+
+    function uploadForwardImage() {
+        $('#forwardImageLabel').hide();
+        $('#checkboxForward').hide();
+        $('#imagePath').show();
+        //$('#imagePath').val('');
+        $('#uploadImg').hide();
+        $('#output').hide();
+        $('#uploadForwardImg').show();
+        $('#addPicForwardBtn').hide();
+        $('#addPicBackwardBtn').hide();
+    }
+
+    function uploadBackwardImage() {
+        $('#backwardImageLabel').hide();
+        $('#checkboxBackward').hide();
+        $('#imagePath').show();
+        //$('#imagePath').val('');
+        $('#uploadImg').hide();
+        $('#output').hide();
+        $('#uploadBackwardImg').show();
+    }
+
+    var loadFile = function (event) {
+        div = document.getElementById('output');
+        div.style.display = "block";
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        imageP = output.src;
+    };
+</script>
+<section id="one" class="main style2 left dark fullscreen">
+    <div id="addpic1"class="content box style2">
+        <header>
+            <h3>Create Tour</h3>
+        </header>
+        <p>
+            Building Name : <input id="buildingName" type="text" name="BuildName" required />
+        </p>
+        <p>
+            Building Description : <textarea id="buildingDesc" rows="5" cols="100" name="TourName"></textarea>
+        </p>
+        <button id="addPictureBtn" onclick="javascript:showDiv();" type="button">Add Picture</button>
+     
+        <br /><br />
+        @*<button type="button">Add Stop</button>
+        <button type="button">Finish Tour</button>*@
+    </div>
+
+    <div id="addpic" class="content style2 box">
+        <p>Add Picture</p>
+        @*<input id="Image1" type="file" name="pic" accept="image/*">
+            <br />
+            <button type="button" >Upload</button>
+            <img id="uploadImg"  />*@
+        <input type="checkbox" id="checkboxLeft" onclick="uploadLeftImage()"><label id="leftImageLabel">Select checkbox if you have any path towards left!!</label> 
+        <input type="checkbox" id="checkboxRight" onclick="uploadRightImage()"><label id="rightImageLabel">Select checkbox if you have any path towards right!!</label>
+        <input type="checkbox" id="checkboxForward" onclick="uploadForwardImage()"><label id="forwardImageLabel">Select checkbox if you have any path towards forward!!</label>
+        <input type="checkbox" id="checkboxBackward" onclick="uploadBackwardImage()"><label id="backwardImageLabel">Select checkbox if you have any path towards backward!!</label>  
+
+        <input id="imagePath" type="file" accept="image/*" onchange="loadFile(event)">
+        <img id="output" />
+        <br />
+        <button id="uploadImg" type="button" onclick="SaveMainImage('main')">Upload</button>
+        
+        <button id="uploadLeftImg" type="button" onclick="SaveMainImage('left')">Upload Left Image</button>
+        <button id="uploadRightImg" type="button" onclick="SaveMainImage('right')">Upload Right Image</button>
+        <button id="uploadForwardImg" type="button" onclick="SaveMainImage('forward')">Upload Forward Image</button>
+        <button id="uploadBackwardImg" type="button" onclick="SaveMainImage('backward')">Upload Backward Image</button>
+        @*<button id="uploadImg" type="button" onclick="SaveMainImage()">Upload Right Image</button>
+        <button id="uploadImg" type="button" onclick="SaveMainImage()">Upload Forwand Image</button>
+        <button id="uploadImg" type="button" onclick="SaveMainImage()">Upload Backward Image</button>*@
+        <button id="addPicLeftBtn" type="button" onclick="ShowLeftImgDialogBTN()">Add Left Picture</button>
+        <button id="addPicRightBtn" type="button" onclick="ShowRightImgDialogBTN()">Add Right Picture</button>
+        <button id="addPicForwardBtn" type="button" onclick="ShowForwardImgDialogBTN()">Add Forward Picture</button>
+        <button id="addPicBackwardBtn" type="button" onclick="ShowBackwardImgDialogBTN()">Add Backward Picture</button>
+        @*<button type="button" id="addBuildingBtn" onclick="javascript:showDiv1();">Add Building</button>*@
+
+        <button id="finishTourBtn" type="button">Finish Tour</button>
+    </div>
+        <div id="addpic2" class="content box style2">
+            <header>
+                <h3>Add Building</h3>
+            </header>
+            
+            <p>
+                Building Name<input type="text" name="BuildName" required />
+            </p>
+            <button onclick="javascript:showDiv();" type="button">Add Picture</button>
+
+            <br /><br />
+            @*<button type="button">Add Stop</button>
+            <button type="button">Finish Tour</button>*@
+       
+</div>
+</section>

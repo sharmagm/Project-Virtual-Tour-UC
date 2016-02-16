@@ -1,0 +1,165 @@
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\VTApp.dll.config
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\VTApp.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\VTApp.pdb
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Antlr3.Runtime.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\EntityFramework.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\EntityFramework.SqlServer.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Newtonsoft.Json.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Owin.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Helpers.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Mvc.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Optimization.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Razor.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.Razor.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\WebGrease.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Helpers.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Mvc.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Optimization.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.Razor.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\System.Web.WebPages.Razor.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Antlr3.Runtime.pdb
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Newtonsoft.Json.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\EntityFramework.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\EntityFramework.SqlServer.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\obj\Debug\VTApp.csprojResolveAssemblyReference.cache
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\obj\Debug\VTApp.dll
+c:\users\garima\documents\visual studio 2013\Projects\VTApp\VTApp\obj\Debug\VTApp.pdb
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\VTApp.dll.config
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\VTApp.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\VTApp.pdb
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Antlr3.Runtime.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\EntityFramework.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\EntityFramework.SqlServer.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Newtonsoft.Json.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Owin.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Helpers.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Mvc.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Optimization.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Razor.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\WebGrease.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Helpers.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Mvc.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Optimization.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.Razor.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Antlr3.Runtime.pdb
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Newtonsoft.Json.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\EntityFramework.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\EntityFramework.SqlServer.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\obj\Debug\VTApp.csprojResolveAssemblyReference.cache
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\obj\Debug\VTApp.dll
+C:\Users\Kushmeen\Downloads\VTApp\VTApp\VTApp\obj\Debug\VTApp.pdb
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\VTApp.dll.config
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\VTApp.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\VTApp.pdb
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Antlr3.Runtime.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\EntityFramework.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\EntityFramework.SqlServer.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Newtonsoft.Json.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Owin.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Helpers.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Mvc.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Optimization.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Razor.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Deployment.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Razor.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\WebGrease.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Helpers.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Mvc.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Optimization.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.Razor.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Deployment.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\System.Web.WebPages.Razor.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Antlr3.Runtime.pdb
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Newtonsoft.Json.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\EntityFramework.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\EntityFramework.SqlServer.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Google.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\obj\Debug\VTApp.dll
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\obj\Debug\VTApp.pdb
+C:\Garima\2nd Flex\XML\VTApp updated\VTApp\VTApp\VTApp\obj\Debug\VTApp.csprojResolveAssemblyReference.cache
