@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VirtualTour" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51376/VirtualTour.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51376/VirtualTour.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51376/VirtualTour.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VirtualTourService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVirtualTour_GetBuildingByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingByID" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_GetBuildingByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_GetImageByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageByID" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_GetImageByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImageByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_GetImagesForDirections_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetImagesForDirections" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_GetImagesForDirections_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetImagesForDirectionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_checkCredentials_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkCredentials" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_checkCredentials_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveCredentials_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCredentials" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveCredentials_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveBuildingInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBuildingInfo" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveBuildingInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBuildingInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveImageInfor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageInfor" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveImageInfor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageInforResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveImageDirectionData_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageDirectionData" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_SaveImageDirectionData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageDirectionDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_CreateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateList" />
+  </wsdl:message>
+  <wsdl:message name="IVirtualTour_CreateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVirtualTour">
+    <wsdl:operation name="GetBuildingByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/GetBuildingByID" message="tns:IVirtualTour_GetBuildingByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/GetBuildingByIDResponse" message="tns:IVirtualTour_GetBuildingByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/GetImageByID" message="tns:IVirtualTour_GetImageByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/GetImageByIDResponse" message="tns:IVirtualTour_GetImageByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImagesForDirections">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/GetImagesForDirections" message="tns:IVirtualTour_GetImagesForDirections_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/GetImagesForDirectionsResponse" message="tns:IVirtualTour_GetImagesForDirections_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkCredentials">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/checkCredentials" message="tns:IVirtualTour_checkCredentials_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/checkCredentialsResponse" message="tns:IVirtualTour_checkCredentials_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveCredentials">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/SaveCredentials" message="tns:IVirtualTour_SaveCredentials_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/SaveCredentialsResponse" message="tns:IVirtualTour_SaveCredentials_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBuildingInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/SaveBuildingInfo" message="tns:IVirtualTour_SaveBuildingInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/SaveBuildingInfoResponse" message="tns:IVirtualTour_SaveBuildingInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImageInfor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/SaveImageInfor" message="tns:IVirtualTour_SaveImageInfor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/SaveImageInforResponse" message="tns:IVirtualTour_SaveImageInfor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImageDirectionData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/SaveImageDirectionData" message="tns:IVirtualTour_SaveImageDirectionData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/SaveImageDirectionDataResponse" message="tns:IVirtualTour_SaveImageDirectionData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IVirtualTour/CreateList" message="tns:IVirtualTour_CreateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IVirtualTour/CreateListResponse" message="tns:IVirtualTour_CreateList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVirtualTour" type="tns:IVirtualTour">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetBuildingByID">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/GetBuildingByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageByID">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/GetImageByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImagesForDirections">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/GetImagesForDirections" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkCredentials">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/checkCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveCredentials">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/SaveCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveBuildingInfo">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/SaveBuildingInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImageInfor">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/SaveImageInfor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImageDirectionData">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/SaveImageDirectionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateList">
+      <soap:operation soapAction="http://tempuri.org/IVirtualTour/CreateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VirtualTour">
+    <wsdl:port name="BasicHttpBinding_IVirtualTour" binding="tns:BasicHttpBinding_IVirtualTour">
+      <soap:address location="http://localhost:51376/VirtualTour.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

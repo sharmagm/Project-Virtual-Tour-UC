@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Assets/css/main.css" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        var imageID = 112;
+        $(document).ready(function () {
+            $('#arrowFwd').click(function () {
+                setFwdArrowImage();
+            });
+            $('#arrowBwd').click(function () {
+                setBwdArrowImage();
+            });
+            $('#arrowLeft').click(function () {
+                setLeftArrowImage();
+            });
+            $('#arrowRight').click(function () {
+                setRightArrowImage();
+            });
+
+            setMainImage(16100);
+        });
+
+        function setRightArrowImage() {
+            $.ajax({
+                data: {
+                    imageIDVal: imageID
+                }, // data being sent to the controller
+                type: 'POST', // we are sending data so this is POST
+                traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+                url: '/Home/ReplaceRightImage', // controller/action name
+                success: function (data) {
+                    imageID = data["imageID"];
+                    if (data["testId"] != null) {
+                        document.getElementById("mainImg").src = "data:image/png;base64," + data["testId"];
+                    }                    
+                    if (data["showArrowRight"] == 0) {
+                        $('#arrowRight').hide();
+                    }
+                    else {
+                        $('#arrowRight').show();
+                    }
+                    if (data["showArrowLeft"] == 0) {
+                        $('#arrowLeft').hide();
+                    }
+                    else {
+                        $('#arrowLeft').show();
+                    }
+                    if (data["showArrowFwd"] == 0) {
+                        $('#arrowFwd').hide();
+                    }
+                    else {
+                        $('#arrowFwd').show();
+                    }
+                    if (data["showArrowBwd"] == 0) {
+                        $('#arrowBwd').hide();
+                    }
+                    else {
+                        $('#arrowBwd').show();
+                    }
+                }
+            });
+        }
+
+        function setLeftArrowImage() {
+            $.ajax({
+                data: {
+                    imageIDVal: imageID
+                }, // data being sent to the controller
+                type: 'POST', // we are sending data so this is POST
+                traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+                url: '/Home/ReplaceLeftImage', // controller/action name
+                success: function (data) {
+                    imageID = data["imageID"];
+                    document.getElementById("mainImg").src = "data:image/png;base64," + data["testId"];
+                    if (data["showArrowRight"] == 0) {
+                        $('#arrowRight').hide();
+                    }
+                    else {
+                        $('#arrowRight').show();
+                    }
+                    if (data["showArrowLeft"] == 0) {
+                        $('#arrowLeft').hide();
+                    }
+                    else {
+                        $('#arrowLeft').show();
+                    }
+                    if (data["showArrowFwd"] == 0) {
+                        $('#arrowFwd').hide();
+                    }
+                    else {
+                        $('#arrowFwd').show();
+                    }
+                    if (data["showArrowBwd"] == 0) {
+                        $('#arrowBwd').hide();
+                    }
+                    else {
+                        $('#arrowBwd').show();
+                    }
+                }
+            });
+        }
+
+        function setFwdArrowImage() {
+            $.ajax({
+                data: {
+                    imageIDVal: imageID
+                }, // data being sent to the controller
+                type: 'POST', // we are sending data so this is POST
+                traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+                url: '/Home/ReplaceFwdImage', // controller/action name
+                success: function (data) {
+                    imageID = data["imageID"];
+                    document.getElementById("mainImg").src = "data:image/png;base64," + data["testId"];
+                    if (data["showArrowRight"] == 0) {
+                        $('#arrowRight').hide();
+                    }
+                    else {
+                        $('#arrowRight').show();
+                    }
+                    if (data["showArrowLeft"] == 0) {
+                        $('#arrowLeft').hide();
+                    }
+                    else {
+                        $('#arrowLeft').show();
+                    }
+                    if (data["showArrowFwd"] == 0) {
+                        $('#arrowFwd').hide();
+                    }
+                    else {
+                        $('#arrowFwd').show();
+                    }
+                    if (data["showArrowBwd"] == 0) {
+                        $('#arrowBwd').hide();
+                    }
+                    else {
+                        $('#arrowBwd').show();
+                    }
+                }
+            });
+        }
+
+        function setBwdArrowImage() {
+            $.ajax({
+                data: {
+                    imageIDVal: imageID
+                }, // data being sent to the controller
+                type: 'POST', // we are sending data so this is POST
+                traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+                url: '/Home/ReplaceBwdImage', // controller/action name
+                success: function (data) {
+                    imageID = data["imageID"];
+                    document.getElementById("mainImg").src = "data:image/png;base64," + data["testId"];
+                    if (data["showArrowRight"] == 0) {
+                        $('#arrowRight').hide();
+                    }
+                    else {
+                        $('#arrowRight').show();
+                    }
+                    if (data["showArrowLeft"] == 0) {
+                        $('#arrowLeft').hide();
+                    }
+                    else {
+                        $('#arrowLeft').show();
+                    }
+                    if (data["showArrowFwd"] == 0) {
+                        $('#arrowFwd').hide();
+                    }
+                    else {
+                        $('#arrowFwd').show();
+                    }
+                    if (data["showArrowBwd"] == 0) {
+                        $('#arrowBwd').hide();
+                    }
+                    else {
+                        $('#arrowBwd').show();
+                    }
+                }
+            });
+        }
+
+        function setMainImage(buildingID) {
+            $.ajax({
+                data: {
+                    buildingIDVal: buildingID
+                }, // data being sent to the controller
+                type: 'POST', // we are sending data so this is POST
+                traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+                url: '/Home/GetSiteConfigData', // controller/action name
+                success: function (data) {
+                    imageID = data["imageID"];
+                    $('#mainImg').attr('src','data:image/png;base64,' + data["testId"]);
+                    if (data["showArrowRight"] == 0) {
+                        $('#arrowRight').hide();
+                    }
+                    else {
+                        $('#arrowRight').show();
+                    }
+                    if (data["showArrowLeft"] == 0) {
+                        $('#arrowLeft').hide();
+                    }
+                    else {
+                        $('#arrowLeft').show();
+                    }
+                    if (data["showArrowFwd"] == 0) {
+                        $('#arrowFwd').hide();
+                    }
+                    else {
+                        $('#arrowFwd').show();
+                    }
+                    if (data["showArrowBwd"] == 0) {
+                        $('#arrowBwd').hide();
+                    }
+                    else {
+                        $('#arrowBwd').show();
+                    }
+                }
+            });
+        }
+    </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home", protocol: null, hostName: null, fragment: "intro", routeValues: null, htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("About UC", "Index", "Home", protocol: null, hostName: null, fragment: "one", routeValues: null, htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("Photo Gallery ", "Index", "Home", protocol: null, hostName: null, fragment: "two", routeValues: null, htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("Video Gallery", "Index", "Home", protocol: null, hostName: null, fragment: "work", routeValues: null, htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("Virtual Tour", "Index", "Home", protocol: null, hostName: null, fragment: "contact", routeValues: null, htmlAttributes: null)</li>
+                    <li>@Html.ActionLink("Log in", "Login", "Account")</li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- Intro -->
+        @RenderBody();
+
+        
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

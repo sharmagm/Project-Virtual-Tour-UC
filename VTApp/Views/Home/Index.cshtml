@@ -1,0 +1,261 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+    //javascript for Google Map api
+    $(document).ready(function () {
+        $("#map_canvas").toggle("slow");
+        $("#text_canvas").toggle("slow");
+        setMainImageLinks();
+
+        var bi = new google.maps.LatLng(39.132112, -84.514354);
+        var mapOptions = {
+            center: new google.maps.LatLng(39.132112, -84.514354),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+        var marker = new google.maps.Marker({
+            map: map,
+            animation: google.maps.Animation.BOUNCE
+
+
+        });
+
+
+        marker.setPosition(bi);
+        //javascript for toggle functionality of google map
+        $("#btn").click(function () {
+            $("#map_canvas").toggle("slow");
+            $("#text_canvas").hide();
+        });
+        //javascript for toggle functionality of text info
+        $("#btn2").click(function () {
+            $("#text_canvas").toggle("slow");
+            $("#map_canvas").hide();
+        });
+
+
+
+    });
+
+    function setMainImageLinks() {
+        $.ajax({
+             // data being sent to the controller
+            type: 'POST', // we are sending data so this is POST
+            traditional: true, // traditonal is true so that the data passed is encoded in a format that works with the MVC framework.
+            url: '/Home/GetLinks', // controller/action name
+            success: function (data) {
+                $("#list ul").append(data["testId"]);
+            }
+        });
+    }
+</script>
+<section id="intro" class="main style1 dark fullscreen">
+    <div class="content container 75%">
+        <header>
+            <h2>University of Cincinnati</h2>
+        </header>
+        <p>
+            Welcome to the virtual tour of University of Cincinnati
+        </p>
+        <footer>
+            <a href="#one" class="button style2 down">More</a>
+        </footer>
+    </div>
+</section>
+
+<!-- One -->
+<section id="one" class="main style2 right dark fullscreen">
+    <div class="content box style2">
+        <header>
+            <h2>Cincinnati</h2>
+        </header>
+        <p>
+            UC is the largest employer in the Cincinnati region, with an economic impact of more than $3 billion. Scroll down to view images,videos and to take a virtual tour of University of Cincinnati - Uptown campus.
+        </p>
+    </div>
+    <a href="#two" class="button style2 down anchored">Next</a>
+</section>
+
+<!-- Two -->
+
+<section id="two" class="main style3 primary">
+    <div class="content container">
+        <header>
+            <h2><font color="Pink">Photo Gallery</font></h2>
+            <p>
+                <font color="white">
+                    The Uptown Campus includes the West, Medical, and Victory Parkway campuses.The athletics teams are known as the "Bearcats". The University has many programs and activities which enable students to develop relationships that will continue and grow throughout their time at the University of Cincinnati.>
+                </font>
+            </p>
+        </header>
+
+        <!-- Lightbox Gallery  -->
+        <div class="container 75% gallery">
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img4.png" class="image fit from-left"><img src="~/images/thumbs/img4.png" title="The Bearcat Mascot" alt="" width="100" height="190" /></a></div>
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img9.jpg" class="image fit from-right"><img src="~/images/thumbs/img9.jpg" title="Students of the Medical Campus" alt="" width="100" height="190" /></a></div>
+            </div>
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img4.jpg" class="image fit from-right"><img src="~/images/thumbs/img4.jpg" title="Flash Mob at the Tangeman University Center" alt="" width="100" height="190" /></a></div>
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img7.jpg" class="image fit from-right"><img src="~/images/thumbs/img7.jpg" title="Students at the Joseph Steger student life center" alt="" width="100" height="190" /></a></div>
+            </div>
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img6.jpg" class="image fit from-left"><img src="~/images/thumbs/img6.jpg" title="The Bearcats" alt="" width="100" height="210" /></a></div>
+                <div class="6u 12u(mobile)"><a href="~/images/fulls/img8.jpg" class="image fit from-left"><img src="~/images/thumbs/img8.jpg" title="God certainly blessed all of us with Carl Lindner" alt="" width="100" height="210" /></a></div>
+            </div>
+        </div>
+
+    </div>
+    <a href="#work" class="button style2 down anchored">Next</a>
+</section>
+
+
+
+<!-- Work -->
+<section id="work" class="main style3 primary">
+    <div class="content container">
+        <header>
+    <h2>Video Gallery</h2>
+    <p>
+        Take a closer look below at some of our buildings.
+    </p>
+</header>
+
+        <!-- Lightbox Gallery  -->
+        <div class="container 75% gallery">
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)">
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/SlGqj0AML_g"></iframe>
+
+                </div>
+                <div class="6u 12u(mobile)">
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/ze-BghpFXDY"></iframe>
+                </div>
+            </div>
+
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)">
+
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/iE4NN4x6710"></iframe>
+
+                </div>
+                <div class="6u 12u(mobile)">
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/rQ3s5XNWFvM"></iframe>
+                </div>
+            </div>
+
+            <div class="row 0% images">
+                <div class="6u 12u(mobile)">
+
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/BT7dZEHi2Mk"></iframe>
+
+                </div>
+                <div class="6u 12u(mobile)">
+                    <iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/W7tO23n2jGc"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="#contact" class="button style2 down anchored">Next</a>
+</section>
+
+<section id="contact" class="main style2 left dark fullscreen">
+
+    <button id="btn" class="button style1 left">Map</button>
+    <button id="btn2" class="button style1 left">Info</button>
+
+    <div class="container body-content">
+        <div id="img1">
+
+            <div id="map_canvas" style="width:550px;height:380px; left:0px;"></div>
+            <div id="text_canvas" class="scroll" style="width:500px;height:380px;">
+                The University of Cincinnati (commonly referred to as Cincinnati or UC) is a comprehensive public research university in Cincinnati, in the U.S. state of Ohio, and a part of the University System of Ohio.
+                Founded in 1819 as Cincinnati College, it is the oldest institution of higher education in Cincinnati and has an annual enrolment of over 40,000 students, making it the second largest university in Ohio and one of the 50 largest universities in the United States. In the 2010 survey by Times Higher Education (UK), the university was ranked in the top 100 universities in North America and as one of the top 200 in the world. Beginning with the 2011 edition of US News and World Report Best Colleges rankings, the University of Cincinnati has been ranked as a Tier One university, ranking as the 129th best overall university and 63rd best public university in the 2015 rankings. This includes being the number 3 ranked university in the nation in the "Up-and-Coming" National Universities section of the 2014 edition. In 2011-2012 academic year the Leiden University ranking put the University of Cincinnati at the 93rd place globally and at the 63rd place in North America by the proportion of top-cited publications. In 2014,U.S. News and World Report ranked UC in the Top-200 of universities worldwide.
+                The university garners nearly $500 million per annum in research funding, ranking 22nd among public universities in the US. Numerous programs across the university are nationally ranked, including: aerospace engineering, anthropology, architecture, classics, composition, conducting, cooperative education, criminal justice, design, environmental science, law, medicine, music, musical theatre, neurology, opera, otolaryngology, palaeontology, paediatrics, and pharmacy.
+                The school offers over 100 bachelor's degrees, over 300 degree-granting programs, and over 600 total programs of study, ranging from certificates to doctoral and first professional education. With an economic impact of over $3.5 billion per year, it is the largest single employer in Greater Cincinnati. After extensive renovations through the implementation of the 1989 Master Plan, the university has been recognized by campus planners and architects as one of the most distinguished campus settings in the world.
+
+
+
+            </div>
+
+
+            <img class="VTimg" style="left:0px" id="mainImg" src="https://www.libraries.uc.edu/content/dam/libraries/business/images/imagerotator/business.jpg" />
+            <div id="img2">
+                <img class="arrowup" id="arrowFwd" src="~/Content/forward_big.png" />
+                <img class="arrowdown" id="arrowBwd" src="~/Content/back.png" />
+                <img class="arrowleft" id="arrowLeft" src="~/Content/turnLeft.png" />
+                <img class="arrowright" id="arrowRight" src="~/Content/turnRight.png" />
+            </div>
+            <div id="list">
+                <ul class="flag_buttons">
+                    @*<li><a onclick="setMainImage(16100);" href="javascript:void(0);">Lindner College of Business</a></li>
+                    <li><a onclick="setMainImage(17100);" href="javascript:void(0);">Myers Alumni Center</a></li>
+                    <li><a onclick="setMainImage(18100);" href="javascript:void(0);">Engineering Research Center</a></li>
+                    <li><a onclick="setMainImage(15100);" href="javascript:void(0);">Keating Aquatic Center</a></li>
+                    <li><a onclick="setMainImage(12300);" href="javascript:void(0);">Recreation Center</a></li>
+                    <li><a onclick="setMainImage(50100);" href="javascript:void(0);">Main Street</a></li>
+                    <li><a onclick="setMainImage(14100);" href="javascript:void(0);">Langsam Library</a></li>
+                    <li><a onclick="setMainImage(19100);" href="javascript:void(0);">Student Life Center</a></li>
+                    <li><a onclick="setMainImage(11100);" href="javascript:void(0);">Nippert Stadium</a></li>
+                    <li><a onclick="setMainImage(13100);" href="javascript:void(0);">Tangeman University Center</a></li>
+                    <li><a onclick="setMainImage(12100);" href="javascript:void(0);">University Pavillion</a></li>
+                    <li><a onclick="setMainImage(10000);" href="javascript:void(0);">McMicken Hall</a></li>*@
+                </ul>
+            </div>
+            <audio id="audioid" controls>
+                <source src="https://dz0zjhi21dz2t.cloudfront.net/media/80217/audio/25720/English.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+
+    <!-- Icons -->
+    <ul class="actions">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
+
+    <!-- Menu -->
+    <ul class="menu">
+        <li>&copy; Untitled</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+
+</footer>
+
+<!-- Scripts -->
+<script src="~/Assets/js/jquery.min.js"></script>
+<script src="~/Assets/js/jquery.poptrox.min.js"></script>
+<script src="~/Assets/js/jquery.scrolly.min.js"></script>
+<script src="~/Assets/js/jquery.scrollex.min.js"></script>
+<script src="~/Assets/js/skel.min.js"></script>
+<script src="~/Assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="~/Assets/js/main.js"></script>
